@@ -1,37 +1,34 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>
-        Exercise 4
-    </title>
-</head>
+    <head>
+        <title> Exercise 4</title>
+        <script type ="text/javascript" src = "manipulate.js"></script>
+        <link rel = "stylesheet" href = "dummy.css">
+    </head>
 <body>
-    <script>
-    function change()
-    {
-    let textDem = document.getElementById("magicText");
-    textDem.style.borderColor = 'rgb(${document.getElementById("bordRed").value}, ${document.getElementById("bordGreeen").value}, ${document.getElementById("bordBlue").value})';
-    textDem.style.borderWidth = document.getElementById("bordWidth").value;
-    textDem.style.backColor = 'rgb(${document.getElementById("groundRed").value}, ${document.getElementById("groundGreeen").value}, ${document.getElementById("groundBlue").value})';
-    }
-    </script>
   <center>
-  <font size="15">
-           <b>Border:</b>
-  </font>
-  <br>
-    Color: <input type="text" id='textColor'><br>
-    Width: <input type="text" id='textWidth'><br>
-    <br>
-    <br>
-    <font size="15">
-             <b>Background:</b>
-    </font>
-    <br>
-    Color: <input type="text" id='backColor'><br>
-    <br>
-    <p id="newText"> This is the text on which I will perform magic and change the color!</p>
-    <button type="button" onclick="change()">CHANGE</button>
+    <h1>Magic Text!</h1>
+    <form>
+        Background 0-255:<br>
+        <br>
+        Red: <input type="text" name="backgroundred" id = "backred"><br>
+        Blue: <input type="text" name="backgroundblue" id = "backblue"><br>
+        Green: <input type="text" name="backgroundgreen" id = "backgreen"><br>
+        <br>
+        <br>
+        Border 0-255:<br>
+        Red: <input type="text" name="bordred" id = "bdred"><br>
+        Blue: <input type="text" name="bordblue" id = "bdblue"><br>
+        Green: <input type="text" name="bordgreen" id = "bdgreen"><br>
+        Width: <input type="text" name="bordwidth" id = "bdwidth"><br>
+        <br>
+        <button type="button" onclick = "manipulate()">Change</button>
+    </form>
+
+    <p id = "magicText">My Magic Text is Here!<br>
+    My Magic Text is Here!<br>
+    My Magic Text is Here!<br>
+    My Magic Text is Here!</p>
   </center>
 </body>
+
 </html>
