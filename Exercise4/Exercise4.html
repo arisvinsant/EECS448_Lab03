@@ -2,22 +2,36 @@
 <html>
 <head>
     <title>
-        Lab 03 Index
+        Exercise 4
     </title>
 </head>
 <body>
+    <script>
+    function change()
+    {
+    let textDem = document.getElementById("magicText");
+    textDem.style.borderColor = 'rgb(${document.getElementById("bordRed").value}, ${document.getElementById("bordGreeen").value}, ${document.getElementById("bordBlue").value})';
+    textDem.style.borderWidth = document.getElementById("bordWidth").value;
+    textDem.style.backColor = 'rgb(${document.getElementById("groundRed").value}, ${document.getElementById("groundGreeen").value}, ${document.getElementById("groundBlue").value})';
+    }
+    </script>
   <center>
   <font size="15">
-           <b>Index</b>
+           <b>Border:</b>
   </font>
+  <br>
+    Color: <input type="text" id='textColor'><br>
+    Width: <input type="text" id='textWidth'><br>
     <br>
-    <a href="EECS448_Lab03/Exercise1.html">Exercise 1</a>
     <br>
-    <a href="EECS448_Lab03/Exercise2.html">Exercise 2</a>
+    <font size="15">
+             <b>Background:</b>
+    </font>
     <br>
-    <a href="EECS448_Lab03/Exercise3.html">Exercise 3</a>
+    Color: <input type="text" id='backColor'><br>
     <br>
-    <a href="EECS448_Lab03/Exercise4.html">Exercise 4</a>
+    <p id="newText"> This is the text on which I will perform magic and change the color!</p>
+    <button type="button" onclick="change()">CHANGE</button>
   </center>
 </body>
 </html>
