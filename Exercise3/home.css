@@ -1,0 +1,20 @@
+i.awesome
+{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-size: xx-large;
+    background-image: url(flame.jpg);
+}
+
+i:hover
+{
+    font-family: cursive;
+}
+
+i.vaporwave
+{
+    background-color: blueviolet;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}

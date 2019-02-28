@@ -5,12 +5,12 @@ function moveBack(){
     if(number==0){
         number = 5;
     }
-     document.getElementById("slide").src = imageArr[number];
+     document.getElementById("slide").src = imageArr[number-1];
 }
 function moveForward(){
     number = number + 1;
-    if(number==6){
-        number == 1;
+    if(number==5){
+        number = 1;
     }
-     document.getElementById("slide").src = imageArr[number];
+     document.getElementById("slide").src = imageArr[number-1];
 }
